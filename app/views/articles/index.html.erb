@@ -1,0 +1,9 @@
+<div class="container text-center">
+<h1>Here are all the articles</h1>
+<% @articles.each do |article| %>
+  <h3><%= article.title %></h3>
+  <%= link_to "See article", article_path(article), class: "btn btn-primary" %>
+  <%= link_to "Edit article", edit_article_path(article), class: "btn btn-warning"%>
+  <%= link_to "Delete this article", article_path(article), method: :delete, class: "btn btn-danger" %>
+<% end %>
+</div>
