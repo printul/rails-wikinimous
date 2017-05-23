@@ -7,5 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 10.times do
-  Article.create(title: Faker::Ancient.titan, content: Faker::Lorem.paragraphs)
+  Article.create(title: Faker::Ancient.titan, content: Faker::Lorem.paragraph(10))
 end
